@@ -1,0 +1,32 @@
+h1,h2{
+    font-family: 'oswald';
+    color: darkblue;
+}
+
+body{
+    font-family: 'open sans';
+    color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: ivory;
+   
+}
+#picture{
+  display: flex; 
+    
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+
+    
+}
+#column {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
