@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Smartphone Products</title>
+    <p style="text-align: center; font-weight: bold;">
+        Hits:<span id="hits_span">0</span>
+        Spins:<span id="spins_span">0</span>
+        Hit/Spin:<span id="hit_spin_span">0</span><br>
+        You win:<span id="win_span">pending...</span>
+    </p>
+    <link rel="stylesheet" type="text/css" href="products-style2.css">
+    
+</head>
+<body>
+    
+    <h1><span id="top_title"></span></h1>
+    <div>
+        <main class="main">
+            <section class="item" onmouseover="changeClassName(this);" onclick="resetClassName(this); ">
+                <h2>HTC</h2>
+                <p>&dollar;40</p>
+                <img src="images/HTC.jpg" />
+            </section>
+            <section class="item" onmouseover="changeClassName(this);" onclick="resetClassName(this); ">
+                <h2>Apple</h2>
+                <p>&dollar;75</p>
+                <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/iphone-3gs.jpg" />
+            </section>
+            <section class="item" onmouseover="changeClassName(this)" onclick="resetClassName(this)">
+                <h2>Nokia</h2>
+                <p>&dollar;35</p>
+                <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Nokia.jpg" />
+            </section>
+            <section class="item" onmouseover="changeClassName(this)" onclick="resetClassName(this)">
+                <h2>Samsung</h2>
+                <p>&dollar;45</p>
+                <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Samsung.jpg" />
+            </section>
+            <section class="item" onmouseover="changeClassName(this)" onclick="resetClassName(this)">
+                <h2>Blackberry</h2>
+                <p>&dollar;10</p>
+                <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Blackberry.jpg" />
+            </section>
+        </main>
+    </div>
+    
+</body>
+<footer>
+    <h1><span id="bottom_title"></span></h1>
+</footer>
+<script src="products_display6starter.js"></script>
+</html>
