@@ -14,7 +14,8 @@ h1, h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  background: url("images/phone_globe.jpg") no-repeat 50% center;
+  /* linking the background bc for some reason the image is not linking properly and am too tired to figure it out*/
+  background: url("https://tassiatessa.github.io/ITM352_repo/Lab6/SmartPhoneProducts1_4/Images/phone_globe.jpg") no-repeat 50% center;
   color: black;
 }
 
