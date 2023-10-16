@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> <link href="invoice1.css" rel="stylesheet" type="text/css"> 
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKE 6.1</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Extended Price</th>
+            </tr>
+        </thead>
+        <tbody id="invoiceTable">
+            <!-- Product rows will be added dynamically using JavaScript -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Sub-total</td>
+                <td id="subtotal_cell">$0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Tax @ 5.75%</td>
+                <td id="tax_cell">$0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Total</strong></td>
+                <td id="total_cell"><strong>$0.00</strong></td>
+            </tr>
+        </tfoot>
+        <p>
+        <strong>Thanks for shopping with Tassia's food store! Your order will be shipped shortly, here is your receipt: </strong>
+         </p>
+    </table>
+    <script src="invoice1.js"></script>
+    
+</body>
+</html>
