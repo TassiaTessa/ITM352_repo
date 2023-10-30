@@ -33,13 +33,13 @@ function validateQuantity(quantity) {
             errorMessage = "Not an Integer. Please enter a non-negative quantity to order.";
             break;
         default:
-            errorMessage = ""; // this will pop up if there are no errors
+            errorMessage = ""; //this displays if no erros
             break;
     }
 
     return errorMessage;
 }
-
+//this displays the purchase (duh)
 function displayPurchase() {
     let quantity = Number(document.getElementById('qty_textbox').value);
 

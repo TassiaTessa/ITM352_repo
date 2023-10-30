@@ -1,15 +1,20 @@
-function updateQuantityMessage(textbox) {
-    let quantityMessage=document.getElementById('qty_textbox_message');
 
-    //validate the quentity entered
-    let validationMessage = validateQuantity(Number(textbox.value));
+function formSubmission() {
+    // get the value from the form int the textbox, convert it to a number and assign it to a thing I can easily type 
+    let quantity = Number(document.querySelector('input[name="qty_textbox"]').value);
 
-    //if there are validation errors, display error message
-    if (validationMessage !=="") {
-        quantityMessage.innerHTML = validationMessage;
+    let validationMessage = validateQuantity(quantity);
+
+    if (validationMessage!=="") {
+        document.getElementById("invalidQuantity").innerHTML = validationMessage;
     } else {
-        quantityMessage.innerHTML = textbox.value;
+        //redirect to the display_purchase.html page 
+        let message = `Thank you for ordering ${quantity} things!`;
+        document.body.innerHTML = message;
     }
+    return false; // prevents form submission if it isnt correct 
+
+
 }
 
 //the (quantity) can be name other things

@@ -2,20 +2,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Order Page 4 </title>
+    <title>Order Page 5 </title>
 </head>
-    <body>
+<body>
+    <!--note the addtion of processOrder function-->
     <form name="qty_form" action="" method="GET" onsubmit="return formSubmission()">
         <label for="qty_textbox">Quantity Desired:</label>
         <input type="text" name="qty_textbox">
         <span id="qty_textbox_message">Enter a quantity</span>
 
-        <br>
+        <br><br>
         <input type="submit" value="Purchase">
     </form>
-    <br><br>
+    
+    <!--added this div for the result message if you don't want a new page (which I dont)-->
     <div id="invalidQuantity"></div>
 
-    <script src="order4.js"></script>
+    <script src="order5.js"></script>
 </body>
 </html>

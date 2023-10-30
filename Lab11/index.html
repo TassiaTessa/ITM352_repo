@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+</head>
+<body>
+    <p>This is a webpage that has all the other pages linked to make our lives easier. I added a description because I am assuming I will want to come back to this page for the final three projects</p>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Vertical Table Example</title>
+    <style>
+        .bordered-table {
+            border: 2px solid #000; /* Adds a black border around the table */
+            background-color: #ebd4ff; 
+        }
+
+        .bordered-table th, .bordered-table td {
+            border: 2px solid #000; /* Adds a black border around table header cells and data cells */
+            padding: 8px; /* Adds some padding for spacing */
+        
+        }
+        
+        .bordered-table th:first-child, .bordered-table td:first-child {
+            font-weight: bold; /* Makes the text in the first column bold */
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="bordered-table">
+        <tr>
+            <th>Order Page Link</th>
+            <th>Description </th>
+        </tr>
+        <tr>
+            <td><a href="order_page.html">Order page 1</a></td>
+            <td>Basic order page, returns the value or error message to the right of the textbox </td>
+        </tr>
+        <tr>
+            <td><a href="order_page2.html">Order page 2</a></td>
+            <td>This one has a button! and an alert if there is an error. When correct it will link me to a receipt page</td>
+        </tr>
+        <tr>
+            <td><a href="order_page3.html">Order page 3</a></td>
+            <td>Same thing as earlier just links to a actual seperate HTML page. is affilated with display_purchase.html and .js </td>
+        </tr>
+        <tr>
+            <td><a href="order_page4.html">Order page 4</a></td>
+            <td>Same as page 3 but wont let me order "dbalgyfciupwahfcs" </td>
+        </tr>
+        <tr>
+            <td><a href="order_page5.html">Order page 5</a></td>
+            <td>Instead of printing a message from order_page5.html, it redirects users to display_purchase.html AND sends the quantity value with it in the URL so it can be processed and used by that page / js file.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+</body>
+</html>

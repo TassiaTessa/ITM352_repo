@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order Page 3</title>
 </head>
 <body>
-    
+    <form name="qty_form" action="display_purchase.html" method="GET">
+        <label for="qty_textbox">Quantity Desired:</label>
+        <input type="text" name="qty_textbox">
+        <span id="qty_textbox_message">Enter a quantity</span>
+
+        <br><br>
+        <input type="submit" value="Purchase">
+    </form>
+    <script src="order3.js"></script>
 </body>
 </html>
