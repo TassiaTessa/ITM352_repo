@@ -1,0 +1,27 @@
+[
+  {
+    "brand": "Apple Watch Ultra screen protector",
+    "price": 90.23,
+    "quantityIndex": 0
+  },
+  {
+    "brand": "Apple Watch Ultra extra band",
+    "price": 22.64,
+    "quantityIndex": 1 
+  },
+  {
+    "brand": "iPhone 15 Pro case",
+    "price": 25.99,
+    "quantityIndex": 2
+  },
+  {
+    "brand": "Apple Watch charging cable",
+    "price": 33.95,
+    "quantityIndex": 3
+  },
+  {
+    "brand": "Apple USB-C cable",
+    "price": 35.00,
+    "quantityIndex": 4
+  } 
+]
