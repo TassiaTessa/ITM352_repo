@@ -1,27 +1,13 @@
-
-
-// Fetch the query string parameters
-const params = new URL(document.location).searchParams;
-// Loop through the expected quantity parameters and update the quantity array
-
-let quantity=[];
-
-for (let i = 0; i < itemData.length; i++) {
-    let quantityValue = params.get(`quantity${i}`);
-    if (quantityValue !== null) {
-        quantity[itemData[i].quantityIndex] = Number(quantityValue);
-    }
-}
-
 //Product Data
-import { itemData, quantity } from './Products_Data.js';
+import { itemData, quantity } from './products_data.js';
 
-//Variables for subtotal, tax, shipping charge, and total
+//adding the Variables for subtotal, tax, shipping charge, and total
 let subtotal = 0;
 let taxRate = 0.0575;
 let taxAmount = 0;
 let total = 0;
 let shippingCharge = 0;
+
 generateItemRows();
 
 if (subtotal <= 50) {
@@ -42,7 +28,7 @@ document.getElementById('total_cell').innerHTML = `$${total.toFixed(2)}`;
 //Setting subtotal, tax, and total cells
 document.getElementById('subtotal_cell').innerHTML = '$' + subtotal.toFixed(2);
 document.getElementById('tax_cell').innerHTML = '$' + taxAmount.toFixed(2);
-document.getElementByID('shipping_cell').innerHTML = '$' + shippingCharge.toFixed(2);
+document.getElementById('shipping_cell').innerHTML = '$' + shippingCharge.toFixed(2);
 
 
 function validateQuantity (quantity) {
